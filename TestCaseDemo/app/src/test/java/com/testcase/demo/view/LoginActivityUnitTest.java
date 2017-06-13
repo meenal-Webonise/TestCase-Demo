@@ -6,13 +6,13 @@ import android.widget.EditText;
 
 import com.testcase.demo.BuildConfig;
 import com.testcase.demo.R;
+import com.testcase.demo.RobolectricTestRunnerWithResources;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowApplication;
@@ -26,8 +26,8 @@ import static org.robolectric.Shadows.shadowOf;
 /**
  * Class LoginActivityUnitTest created on 6/9/17.
  */
-@RunWith(RobolectricTestRunner.class)
-@Config(constants = BuildConfig.class, sdk = 21, manifest = "src/main/AndroidManifest.xml", packageName = "com.testcase.demo")
+@RunWith(RobolectricTestRunnerWithResources.class)
+@Config(constants = BuildConfig.class)
 public class LoginActivityUnitTest {
 
     private EditText emailView;
