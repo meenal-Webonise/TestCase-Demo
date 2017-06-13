@@ -35,8 +35,8 @@ public class LoginActivityTest {
     @Rule
     public ActivityTestRule<LoginActivity> mActivityTestRule = new ActivityTestRule<>(LoginActivity.class);
 
-    private static final String STRING_TO_BE_TYPED_INVALID_USERNAME = "meenal.sharma@weboapps.com";
-    private static final String STRING_TO_BE_TYPED_INVALID_PASSWORD = "temp12345";
+    private static final String STRING_TO_BE_TYPED_INVALID_USERNAME = "meenal.sharma@gmail.com";
+    private static final String STRING_TO_BE_TYPED_INVALID_PASSWORD = "te12345";
 
     private static final String STRING_TO_BE_TYPED_VALID_USERNAME = "foo@example.com";
     private static final String STRING_TO_BE_TYPED_VALID_PASSWORD = "foo";
