@@ -19,4 +19,15 @@
         <activity android:name=".view.MainActivity"/>
     </application>
 
+
+    <receiver android:name=".MyBroadcastReceiver"
+              android:permission="com.google.android.c2dm.permission.SEND">
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            <category android:name="be.acuzio.mrta" />
+        </intent-filter>
+    </receiver>
+
+    <service android:name=".MyBroadcastIntentService"></service>
+
 </manifest>
